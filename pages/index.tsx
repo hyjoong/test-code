@@ -1,4 +1,4 @@
-import BaseLayout from "components/BaseLayout/BaseLayout";
+import BaseLayout from "components/template/BaseLayout/BaseLayout";
 
 const Index = () => {
   return <BaseLayout>index</BaseLayout>;
