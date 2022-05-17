@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Input = styled.input`
+const Input = styled.input`
   height: 20px;
   width: 550px;
   padding: 10px;
@@ -10,3 +10,5 @@ export const Input = styled.input`
     color: grey;
   }
 `;
+
+export default { Input };

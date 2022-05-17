@@ -1,5 +1,5 @@
 import React from "react";
-import * as Styled from "./Input.styles";
+import Styled from "./Input.styles";
 
 interface Props {
   onChange: (e) => void;
