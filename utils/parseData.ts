@@ -3,6 +3,6 @@ const parseRepoData = (repo: any) => {
   return { owner: item[0], repo: item[1] };
 };
 
-export const parseRepoDataList = (repo: []) => {
-  return repo.map(parseRepoData);
+export const parseRepoDataList = (data: []) => {
+  return data.map(parseRepoData);
 };
