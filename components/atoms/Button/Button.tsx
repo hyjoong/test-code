@@ -6,7 +6,7 @@ export interface Props
     "disabled" | "onClick" | "children" | "type"
   > {
   size: "SM" | "MD" | "LG";
-  color: "BLUE" | "RED";
+  color: "BLUE" | "RED" | "GREY";
 }
 
 const Button = ({

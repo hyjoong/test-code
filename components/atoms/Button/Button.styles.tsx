@@ -12,6 +12,10 @@ const COLOR = {
     color: "#fff",
     backgroundColor: "#FF4400",
   },
+  GREY: {
+    color: "#fff",
+    backgroundColor: "#8D8D8D",
+  },
 };
 
 const BUTTON_SIZE = {
