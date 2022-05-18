@@ -4,14 +4,16 @@ import Styled from "./Input.styles";
 interface Props {
   onChange: (e) => void;
   onKeyUp: (e) => void;
+  placeholder: string;
 }
 
-const Input = ({ onChange, onKeyUp }: Props) => {
+const Input = ({ onChange, onKeyUp, placeholder }: Props) => {
   return (
     <Styled.Input
       onChange={onChange}
       onKeyUp={onKeyUp}
-      placeholder="Github Repository를 검색하세요 "
+      placeholder={placeholder}
+      required
     ></Styled.Input>
   );
 };

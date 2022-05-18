@@ -7,12 +7,13 @@ interface Props {
   onClick: () => void;
   onChange: (e) => void;
   onKeyUp: (e) => void;
+  placeholder: string;
 }
 
 const SearchBar = ({ onClick, onChange, onKeyUp }: Props) => {
   return (
     <Styled.SearchBar>
-      <Input onChange={onChange} onKeyUp={onKeyUp} />
+      <Input onChange={onChange} onKeyUp={onKeyUp} placeholder={placeholder} />
       <Button size="SM" onClick={onClick} color="BLUE">
         검색
       </Button>
