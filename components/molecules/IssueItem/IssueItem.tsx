@@ -2,12 +2,16 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
-const IssueItem = ({ data }: any) => {
+const IssueItem = ({ data, type }: any) => {
   return (
     <Root>
       {data?.map((item, index) => (
         <Link href={`${item.html_url}`} key={index}>
-          <Item state={item.state}>{item.title}</Item>
+          {type === "repo" ? (
+            <Item state={item.state}>{item.name}</Item>
+          ) : (
+            <Item state={item.state}>{item.title}</Item>
+          )}
         </Link>
       ))}
     </Root>
