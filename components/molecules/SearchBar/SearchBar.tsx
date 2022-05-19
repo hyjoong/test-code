@@ -10,7 +10,7 @@ interface Props {
   placeholder: string;
 }
 
-const SearchBar = ({ onClick, onChange, onKeyUp }: Props) => {
+const SearchBar = ({ onClick, onChange, onKeyUp, placeholder }: Props) => {
   return (
     <Styled.SearchBar>
       <Input onChange={onChange} onKeyUp={onKeyUp} placeholder={placeholder} />

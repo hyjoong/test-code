@@ -9,22 +9,9 @@ export interface Props
   color: "BLUE" | "RED" | "GREY";
 }
 
-const Button = ({
-  disabled,
-  onClick,
-  size,
-  color,
-  children,
-  type = "button",
-}: Props) => {
+const Button = ({ onClick, children, type = "button", ...rest }: Props) => {
   return (
-    <Styled.Button
-      type={type}
-      disabled={disabled}
-      onClick={onClick}
-      size={size}
-      color={color}
-    >
+    <Styled.Button onClick={onClick} type={type} {...rest}>
       {children}
     </Styled.Button>
   );
